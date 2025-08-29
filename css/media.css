@@ -1,0 +1,59 @@
+@media (min-width: 576px) {
+    .wrapper {
+        width: 570px;
+    }
+    .header-info {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .card {
+        width: 550px;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) {
+    .wrapper {
+        width: 760px;
+    }
+    .burger-btn {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+    }
+    .header-info {
+        font-size: 21px;
+        width: 600px;
+    }
+    .about-us-text {
+        font-size: 20px;
+    }
+    .card-text {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 1020px;
+    }
+    .nav-logo img{
+        height: 38px;
+    }
+    .item-nav-menu {
+        font-size: 22px;
+        margin-right: 40px;
+    }
+    .header-info {
+        font-size: 22px;
+    }
+    .card {
+        width: 350px;
+    }
+}
+@media (min-width: 1280px) {
+    .wrapper {
+        width: 1200px;
+    }
+}

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83896c9831.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-shadow"></div>
+      <div class="nav-bcg">
+        <div class="wrapper">
+          <div class="navigation">
+            <div class="nav-logo">
+              <a href="./">
+                <img src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+            <button id="burger-btn" class="burger-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="burger-menu" class="burger-menu">
+              <div class="burger-nav">
+                <div class="nav-logo">
+                  <a href="./">
+                    <img src="./img/logo.png" alt="logo">
+                  </a>
+                </div>
+                <button id="burger-x" class="burger-x">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <button class="item-burger-menu"><a href="#about">O nas</a></button>
+              <button class="item-burger-menu"><a href="#offers">Oferty</a></button>
+              <button class="item-burger-menu"><a href="#contact">Kontakt</a></button>
+            </div>
+            <ul id="nav-menu" class="nav-menu">
+              <li class="item-nav-menu"><a href="#about">O nas</a></li>
+              <li class="item-nav-menu"><a href="#offers">Usługi</a></li>
+              <li class="item-nav-menu active-nav"><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-info">
+          <div class="wrapper">
+            <div class="header-info-text">
+              <h1>Profesjonalne systemy dozowania środków chemicznych</h1>
+            </div>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="about">
+      <div class="wrapper">
+        <div class="about-us">
+          <div class="about-us-text">
+            <h2>Jesteśmy najlepszą firmą produkującą dozowniki</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni facilis ratione enim omnis sapiente temporibus officiis ad aut asperiores accusantium, repellat, fugit laudantium, placeat inventore minus eius? Voluptatibus fugiat expedita delectus fugit repellat. Commodi laboriosam dolorum atque optio fuga magnam, dolor libero ad cum eligendi iure consequuntur qui illo! Tempora?</p>
+          </div>
+          <div class="about-us-img">
+            <img src="./img/learning.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offers" class="gallery-section">
+      <div class="wrapper">
+        <h2 class="cards-title">Nasza produkcja</h2>
+        <div class="cards">
+          <div class="card">
+            <img class="card-img" src="./img/header-bcg.jpg" alt="">
+            <div class="card-text">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p class="card-text">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/learning.jpg" alt="">
+            <div class="card-text">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p class="card-text">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates voluptate maiores magni pariatur obcaecati. Explicabo neque error quod deserunt impedit?</p>
+              <span class="read-more">więcej...</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/photo-item3.png" alt="">
+            <div class="card-text">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p class="card-text">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nam. Vel, nemo error alias neque id dolores iure eaque incidunt.</p>
+              <span class="read-more">więcej...</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/header-bcg.jpg" alt="">
+            <div class="card-text">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p class="card-text">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/header-bcg.jpg" alt="">
+            <div class="card-text">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p class="card-text">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="wrapper">
+        <div class="contact">
+          <form action="mail.php" method="post" class="contact-form">
+            <div class="contact-box">
+              <label for="name">Imię:</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="contact-box">
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="contact-box">
+              <label for="name">Wiadomość:</label>
+              <textarea name="msg" id="msg" required></textarea>
+            </div>
+            <button>Wyślij</button>
+          </form>
+          <p class="msg-status"></p>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="wrapper">
+        <div class="footer-items">
+          <div class="footer-item">
+            <h3 class="footer-item-title">kontakt</h3>
+            <ul class="footer-item-text">
+              <li>warszawa 230-113</li>
+              <li>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <a href="tel:+48123456789">+48 123 456 789</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:unidoz.info">unidoz.info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subfooter"> 
+      <ul class="subfooter-content">
+          <li class="list-inline-item">&copy; <span class="footer__year"></span> Unidoz. All rights reserved.</li>
+      </ul>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
